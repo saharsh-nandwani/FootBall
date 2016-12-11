@@ -2,8 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Watch </title>
-  <link rel="stylesheet" href="style.css" >
+  <title>Match </title>
 </head>
 <body>
   <div id ="Match-form" class=form>
@@ -12,7 +11,7 @@
       Teams:<input  placeholder="Enter the Teams" v-model="newMatch.teams"></br>
       Venue:<input placeholder="Venue " v-model="newMatch.venue"><br>
       Details:<textarea placeholder=" Details" v-model="newMatch.detail"></textarea><br>
-      Date:<input placeholder="Enter the date!" v-model="newMatch.date"><br>
+      Date:<input type=placeholder="Enter the date!" v-model="newMatch.date"><br>
       Time:<input placeholder="Enter the time!" v-model="newMatch.time"><br>
       <button @click="addMatch()">Add Match!</button>
     </form>
@@ -21,19 +20,17 @@
   <div id="app" >
     Matches
       <a v-for="match in matchs">
-        <div class="table">
-        <br>
-        <table border=3>
+        <div class="table"> <table border=3>
         <tr><th>Teams:</th><td>{{ match.teams}}</td>
         <tr><th>Venue</th> <td> {{ match.venue}}</td>
-        <tr><th>Details</th> <td> {{ match.detail }}</td>
+        <tr><th>Details</th> <td> {{ match.detail}}</td>
         <tr><th>Date </th><td>  {{ match.date}}</td>
         <tr><th>Time </th> <td>  {{ match.time}}</td>
-        <tr>
+        </table>
       </a>
     </div>
     <script src= "vue.js"></script>
-    <script src=watch.js></script>
+    <script src=match.js></script>
 
   </body>
   </html>
