@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vue </title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div>
+    Teams:<input  placeholder="Enter the Teams" v-model="event.title"></br>
+    Venue:<input placeholder="Venue " v-model="event.venue"><br>
+    Details:<textarea placeholder=" Details" v-model="event.detail"></textarea><br>
+    Date:<input type="date"  placeholder="Enter the date!" v-model="event.date"><br>
+    Time:<input type="time"  placeholder="Enter the time!" v-model="event.time"><br>
+    <button v-on:click="addEvent">Add Event!</button>
+  </div>
+</body>
+</html>
