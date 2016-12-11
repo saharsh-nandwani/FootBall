@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Watch </title>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-  <div id ="Match-form">
+  <div id ="Match-form" class=form>
     <form>
 
       Teams:<input  placeholder="Enter the Teams" v-model="newMatch.teams"></br>
@@ -20,11 +18,10 @@
     </form>
   </div>
   <br>
-  <div id="app" class="demo">
+  <div id="app" >
     Matches
-    <ul>
-      <li>   <a v-for="match in matchs">
-        <table>
+      <a v-for="match in matchs">
+        <div class="table"> <table border=3>
         <tr><th>Teams:</th><td>{{ match.teams}}</td>
         <tr><th>Venue</th> <td> {{ match.venue}}</td>
         <tr><th>Details</th> <td> {{ match.detail}}</td>

@@ -7,7 +7,7 @@ new Vue({
   },
 
   methods: {
-    addmatch: function () {
+    addMatch: function () {
       var newMatch = this.message
       this.matchs.push(newMatch)
       this.message=""

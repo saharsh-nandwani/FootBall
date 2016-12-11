@@ -1,0 +1,31 @@
+body {
+  background: url(pitch.jpg);
+  background-repeat: no-repeat
+  color: red;
+  font-size: larger;
+	color: #eeecec;
+}
+
+h1{
+  text-allign: center;
+}
+
+div.form{
+  border-radius: 10px;
+  border-width: thick;
+  border-style: solid;
+  background-color: green;
+  opacity: 0.9
+
+}
+div.table{
+  display:flex;
+}
+div.table{
+  border-radius: 10px;
+  border-width: thick;
+  border-style: solid;
+  background-color: green;
+  opacity: 0.9
+
+}
