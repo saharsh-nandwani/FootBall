@@ -8,13 +8,27 @@
   </style>
 </head>
 <body>
-  <div>
-    Teams:<input  placeholder="Enter the Teams" v-model="event.title"></br>
-    Venue:<input placeholder="Venue " v-model="event.venue"><br>
-    Details:<textarea placeholder=" Details" v-model="event.detail"></textarea><br>
-    Date:<input type="date"  placeholder="Enter the date!" v-model="event.date"><br>
-    Time:<input type="time"  placeholder="Enter the time!" v-model="event.time"><br>
-    <button v-on:click="addEvent">Add Event!</button>
+  <div id ="Match-form">
+    <form>
+
+      Teams:<input  placeholder="Enter the Teams" v-model="newMatch.teams"></br>
+      Venue:<input placeholder="Venue " v-model="newMatch.venue"><br>
+      Details:<textarea placeholder=" Details" v-model="newMatch.detail"></textarea><br>
+      Date:<input placeholder="Enter the date!" v-model="newMatch.date"><br>
+      Time:<input placeholder="Enter the time!" v-model="newMatch.time"><br>
+      <button @click="addMatch()">Add Match!</button>
+    </form>
   </div>
+<br>
+  <div id="app" class="demo">
+Matches
+  <ul>
+    <li>   <a v-for="value in match">
+      {{ value }}
+</a>
+</div>
+  <script src= "vue.js"></script>
+  <script src=watch.js></script>
+
 </body>
 </html>
