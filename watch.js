@@ -2,8 +2,8 @@ new Vue({
   el: '#app',
 
   data: {
-    match : {teams: 'Man vs Chl', venue: 'F-202', deatil: 'BYOB', date: '12-12-2016', time: '11:00' },
-    matchs: []
+    matchs: [{teams: 'Man vs Chl', venue: 'Home', detail: 'BYOB', date: '12-12-2016', time: '11:00' },
+              {teams: '', venue: '', deatil: '', date: '', time: ' ' }]
   },
 
   methods: {

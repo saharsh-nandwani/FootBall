@@ -19,16 +19,21 @@
       <button @click="addMatch()">Add Match!</button>
     </form>
   </div>
-<br>
+  <br>
   <div id="app" class="demo">
-Matches
-  <ul>
-    <li>   <a v-for="value in match">
-      {{ value }}
-</a>
-</div>
-  <script src= "vue.js"></script>
-  <script src=watch.js></script>
+    Matches
+    <ul>
+      <li>   <a v-for="match in matchs">
+        <table>
+        <tr><th>Teams:</th><td>{{ match.teams}}</td>
+        <tr><th>Venue</th> <td> {{ match.venue}}</td>
+        <tr><th>Details</th> <td> {{ match.detail}}</td>
+        <tr><th>Date </th><td>  {{ match.date}}</td>
+        <tr><th>Time </th> <td>  {{ match.time}}</td>
+      </a>
+    </div>
+    <script src= "vue.js"></script>
+    <script src=watch.js></script>
 
-</body>
-</html>
+  </body>
+  </html>
